@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abitha | Personal Portfolio - MERN Stack Developer</title>
+  <meta name="description" content="Welcome to the personal portfolio of Abitha - passionate MERN Stack Developer building modern, responsive, and user-friendly web applications.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Pure Custom CSS (Zero Tailwind) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Interactive Canvas Background -->
+  <canvas id="ambient-canvas"></canvas>
+  
+  <!-- Luminous Atmospheric Gradients -->
+  <div class="glow-orb-1"></div>
+  <div class="glow-orb-2"></div>
+  <div class="bg-pattern"></div>
+
+  <!-- Header / Navigation Bar (Full Width, Borderless) -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo">
+        <div class="brand-icon">A</div>
+        <div class="brand-text">
+          <span class="brand-name">Abitha</span>
+          <span class="brand-role">MERN Developer</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Button -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <span>Hire Me</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+        <button class="menu-toggle" id="menu-btn" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#home" class="mobile-link">Home</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#experience" class="mobile-link">Experience</a>
+      <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Available for Opportunities</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Abitha</span>.<br>
+            MERN Stack Developer.
+          </h1>
+
+          <p class="hero-desc">
+            A passionate <strong>MERN Stack Developer</strong> who enjoys building modern, responsive, and user-friendly web applications with clean code, scalable architecture, and delightful user experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-shapes"></i>
+              <span>Explore Projects</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+            <button class="btn btn-outline" onclick="openResumeModal()">
+              <i class="fa-regular fa-file-pdf"></i>
+              <span>Download CV</span>
+            </button>
+          </div>
+
+          <!-- Hero Contact Strip -->
+          <div class="hero-contact-strip">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:abitha.mern@gmail.com">abitha.mern@gmail.com</a>
+            </div>
+            <span class="dot-sep">•</span>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:9943062541">+91 9943062541</a>
+            </div>
+            <span class="dot-sep">•</span>
+            <div class="contact-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/abitha-mern-developer" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="hero-visual">
+          <div class="hero-card">
+            
+            <div class="card-top">
+              <div class="profile-avatar-wrap">
+                <div class="profile-avatar">AB</div>
+                <div>
+                  <div class="profile-name">Abitha</div>
+                  <div class="profile-title">MERN Stack Engineer</div>
+                </div>
+              </div>
+              <div class="badge-live">
+                <span class="pulse-dot"></span> Online
+              </div>
+            </div>
+
+            <!-- Code Tech Box -->
+            <div class="code-box">
+              <div class="code-row">
+                <span class="stack-key key-m">M</span>
+                <span class="stack-val">MongoDB & MySQL Database</span>
+              </div>
+              <div class="code-row">
+                <span class="stack-key key-e">E</span>
+                <span class="stack-val">Express.js & REST APIs</span>
+              </div>
+              <div class="code-row">
+                <span class="stack-key key-r">R</span>
+                <span class="stack-val">React.js & Redux Architecture</span>
+              </div>
+              <div class="code-row">
+                <span class="stack-key key-n">N</span>
+                <span class="stack-val">Node.js & JWT Authentication</span>
+              </div>
+            </div>
+
+            <div class="card-metrics">
+              <div class="metric-pill">
+                <div class="metric-num"><span class="counter" data-target="6">0</span>+</div>
+                <div class="metric-label">Shipped Projects</div>
+              </div>
+              <div class="metric-pill">
+                <div class="metric-num"><span class="counter" data-target="100">0</span>%</div>
+                <div class="metric-label">Mobile Responsive</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Continuous Tech Marquee Strip -->
+  <div class="tech-marquee">
+    <div class="marquee-content">
+      <div class="marquee-item"><i class="fa-brands fa-react"></i> React.js</div>
+      <div class="marquee-item"><i class="fa-brands fa-node-js"></i> Node.js</div>
+      <div class="marquee-item"><i class="fa-solid fa-server"></i> Express.js</div>
+      <div class="marquee-item"><i class="fa-solid fa-database"></i> MongoDB</div>
+      <div class="marquee-item"><i class="fa-brands fa-js"></i> JavaScript ES6+</div>
+      <div class="marquee-item"><i class="fa-brands fa-html5"></i> HTML5 & CSS3</div>
+      <div class="marquee-item"><i class="fa-solid fa-layer-group"></i> Redux & Context API</div>
+      <div class="marquee-item"><i class="fa-solid fa-key"></i> JWT Authentication</div>
+      <div class="marquee-item"><i class="fa-brands fa-git-alt"></i> Git & GitHub</div>
+      <div class="marquee-item"><i class="fa-solid fa-cloud-arrow-up"></i> Vercel & Render</div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// 01. About Me</span>
+        <h2 class="section-title">Background & Specialization</h2>
+        <p class="section-subtitle">Dedicated to creating elegant web interfaces backed by resilient server systems.</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="about-grid">
+        
+        <div class="about-card-main">
+          <h3>Hello, I'm Abitha 👋</h3>
+          <p>
+            I am a passionate <strong>MERN Stack Developer</strong> with a solid foundation in building end-to-end web applications. I enjoy crafting modern, responsive, and user-friendly digital products that combine beautiful visuals with scalable backends.
+          </p>
+          <p>
+            My experience spans frontend engineering with <strong>React.js, Redux, and Context API</strong>, creating fast server architectures using <strong>Node.js and Express.js</strong>, and structuring robust databases in <strong>MongoDB and MySQL</strong>.
+          </p>
+
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-title">Email</span>
+              <span class="info-value"><a href="mailto:abitha.mern@gmail.com">abitha.mern@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+              <span class="info-title">Phone</span>
+              <span class="info-value"><a href="tel:9943062541">+91 9943062541</a></span>
+            </div>
+            <div class="info-item">
+              <span class="info-title">LinkedIn</span>
+              <span class="info-value"><a href="https://www.linkedin.com/in/abitha-mern-developer" target="_blank" rel="noreferrer">abitha-mern-developer</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-bento-side">
+          <div class="bento-card">
+            <div class="bento-icon"><i class="fa-solid fa-laptop-code"></i></div>
+            <h4>Frontend</h4>
+            <p>React.js, responsive layouts, interactive components, and clean UI.</p>
+          </div>
+          <div class="bento-card">
+            <div class="bento-icon"><i class="fa-solid fa-server"></i></div>
+            <h4>Backend</h4>
+            <p>Node.js, Express REST APIs, secure JWT auth, and middleware.</p>
+          </div>
+          <div class="bento-card">
+            <div class="bento-icon"><i class="fa-solid fa-database"></i></div>
+            <h4>Databases</h4>
+            <p>MongoDB Atlas, NoSQL collections, schema design, and MySQL.</p>
+          </div>
+          <div class="bento-card">
+            <div class="bento-icon"><i class="fa-solid fa-cloud"></i></div>
+            <h4>Deployment</h4>
+            <p>Version control with Git/GitHub, cloud deployment on Vercel & Render.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// 02. My Skills</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">A comprehensive breakdown of tools, frameworks, and technologies I use.</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        
+        <!-- Frontend Development -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-react"></i></div>
+            <h3>Frontend Development</h3>
+          </div>
+          <p>Building high-performance, responsive, and reactive interfaces.</p>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-check"></i> HTML5 & CSS3</li>
+            <li><i class="fa-solid fa-check"></i> JavaScript (ES6+)</li>
+            <li><i class="fa-solid fa-check"></i> React.js & Hooks</li>
+            <li><i class="fa-solid fa-check"></i> Redux & Context API</li>
+            <li><i class="fa-solid fa-check"></i> Responsive Mobile Layouts</li>
+          </ul>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-node-js"></i></div>
+            <h3>Backend Development</h3>
+          </div>
+          <p>Engineering resilient, secure, and performant server-side systems.</p>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-check"></i> Node.js Runtime</li>
+            <li><i class="fa-solid fa-check"></i> Express.js Framework</li>
+            <li><i class="fa-solid fa-check"></i> RESTful API Architecture</li>
+            <li><i class="fa-solid fa-check"></i> JWT Authentication & bcrypt</li>
+            <li><i class="fa-solid fa-check"></i> Middleware & Route Handlers</li>
+          </ul>
+        </div>
+
+        <!-- Database Management -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-database"></i></div>
+            <h3>Database Management</h3>
+          </div>
+          <p>Structuring relational and non-relational database architectures.</p>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-check"></i> MongoDB & Atlas</li>
+            <li><i class="fa-solid fa-check"></i> Mongoose ODM Modeling</li>
+            <li><i class="fa-solid fa-check"></i> MySQL Relational DB</li>
+            <li><i class="fa-solid fa-check"></i> CRUD Operations & Querying</li>
+            <li><i class="fa-solid fa-check"></i> Data Validation & Schemas</li>
+          </ul>
+        </div>
+
+        <!-- Deployment & Version Control -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-code-branch"></i></div>
+            <h3>Deployment & Tools</h3>
+          </div>
+          <p>Collaboration workflows, version control, and production cloud hosting.</p>
+          <ul class="skill-list">
+            <li><i class="fa-solid fa-check"></i> Git & GitHub Version Control</li>
+            <li><i class="fa-solid fa-check"></i> Vercel Cloud Hosting</li>
+            <li><i class="fa-solid fa-check"></i> Render Backend Deployments</li>
+            <li><i class="fa-solid fa-check"></i> CI/CD Pipeline Practices</li>
+            <li><i class="fa-solid fa-check"></i> Postman API Testing</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// 03. Portfolio Projects</span>
+        <h2 class="section-title">Featured Development Work</h2>
+        <p class="section-subtitle">Real-world applications built with live demo links and full MERN capabilities.</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Trendique Clothing Store -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-tag-wrap">
+              <span class="project-category">MERN E-Commerce</span>
+              <div class="project-quick-links">
+                <a href="https://trendique.vercel.app/" target="_blank" rel="noreferrer" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Trendique Clothing Store</h3>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              A comprehensive MERN Stack e-commerce website featuring user authentication, catalog filtering, product management, and cart operations.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">JWT</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://trendique.vercel.app/" target="_blank" rel="noreferrer" class="live-link-btn">
+                <span>View Live Demo</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Instagram Clone -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-tag-wrap">
+              <span class="project-category">Social Platform</span>
+              <div class="project-quick-links">
+                <a href="https://instagram-clone-eight-ruby.vercel.app/" target="_blank" rel="noreferrer" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Instagram Clone</h3>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              A MERN Stack social media application featuring secure user sign-in/up, post publishing, feed scrolling, like functionality, and comments.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">Cloudinary</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://instagram-clone-eight-ruby.vercel.app/" target="_blank" rel="noreferrer" class="live-link-btn">
+                <span>View Live Demo</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Expense Tracker -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-tag-wrap">
+              <span class="project-category">Finance Web App</span>
+              <div class="project-quick-links">
+                <a href="https://expense-tracker-jet-seven-88.vercel.app/" target="_blank" rel="noreferrer" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Expense Tracker</h3>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              A dynamic web application for managing daily finances, tracking income and expense logs, and calculating real-time balance analytics.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">Express</span>
+              <span class="tech-pill">MongoDB</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://expense-tracker-jet-seven-88.vercel.app/" target="_blank" rel="noreferrer" class="live-link-btn">
+                <span>View Live Demo</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Movie Search Application -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-tag-wrap">
+              <span class="project-category">API Integration</span>
+              <div class="project-quick-links">
+                <a href="https://movie-search-mu-umber.vercel.app/" target="_blank" rel="noreferrer" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Movie Search</h3>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              A React web application that integrates external movie database APIs to allow users to search titles, view ratings, synopsis, and posters.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">React.js</span>
+              <span class="tech-pill">REST API</span>
+              <span class="tech-pill">Async/Await</span>
+              <span class="tech-pill">CSS3</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://movie-search-mu-umber.vercel.app/" target="_blank" rel="noreferrer" class="live-link-btn">
+                <span>View Live Demo</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5: Booksky Management -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-tag-wrap">
+              <span class="project-category">Vanilla JS App</span>
+              <div class="project-quick-links">
+                <a href="https://books-ky.vercel.app/" target="_blank" rel="noreferrer" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Booksky</h3>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              An interactive book management web application allowing readers to add, organize, and delete book entries with clean DOM manipulation.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">DOM Manipulation</span>
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">CSS3</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://books-ky.vercel.app/" target="_blank" rel="noreferrer" class="live-link-btn">
+                <span>View Live Demo</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6: Personal Portfolio -->
+        <div class="project-card">
+          <div class="project-banner">
+            <div class="project-tag-wrap">
+              <span class="project-category">Personal Site</span>
+              <div class="project-quick-links">
+                <a href="https://portfolio-zeta-green-95.vercel.app/" target="_blank" rel="noreferrer" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            <h3 class="project-title">Personal Portfolio</h3>
+          </div>
+          <div class="project-body">
+            <p class="project-desc">
+              My responsive portfolio website showcasing technical skills, projects, and contact channels. Built with pure HTML, CSS, and JavaScript.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-pill">HTML5</span>
+              <span class="tech-pill">Custom CSS</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Vercel</span>
+            </div>
+            <div class="project-footer">
+              <a href="https://portfolio-zeta-green-95.vercel.app/" target="_blank" rel="noreferrer" class="live-link-btn">
+                <span>View Live Demo</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Career Experience & Journey -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// 04. Milestones</span>
+        <h2 class="section-title">Development Journey</h2>
+        <p class="section-subtitle">How I evolved my passion for web development and software engineering.</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="timeline-wrap">
+        <div class="timeline-line"></div>
+
+        <!-- Item 1: Web Development Internship -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">4 Months</span>
+            <h3 class="timeline-role">Web Development Intern</h3>
+            <p class="timeline-org">Web Development & Full-Stack Application Development</p>
+            <p class="timeline-desc">
+              Successfully completed a 4-month internship in web development, gaining hands-on experience in building responsive and user-friendly web applications. Worked with modern frontend technologies, developed interactive UI components, integrated backend APIs, and connected applications with databases. Collaborated on real-world projects, gaining practical experience in application development, debugging, and problem-solving.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: MERN Stack Specialization -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Specialization</span>
+            <h3 class="timeline-role">MERN Stack Developer</h3>
+            <p class="timeline-org">Full-Stack Application Development</p>
+            <p class="timeline-desc">
+              Developed end-to-end full-stack web applications using MongoDB, Express.js, React.js, and Node.js. Successfully deployed multiple projects including Trendique E-Commerce, Instagram Clone, and Expense Tracker with authentication, state management, and cloud databases.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">// 05. Get In Touch</span>
+        <h2 class="section-title">Contact Abitha</h2>
+        <p class="section-subtitle">I'm interested in opportunities to work on exciting web development projects and collaborate with other developers.</p>
+        <div class="title-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Information Cards -->
+        <div class="contact-info-panel">
+          
+          <div class="contact-card-box">
+            <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email Address</span>
+              <a href="mailto:abitha.mern@gmail.com"><span class="contact-value">abitha.mern@gmail.com</span></a>
+            </div>
+          </div>
+
+          <div class="contact-card-box">
+            <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-label">Phone Number</span>
+              <a href="tel:9943062541"><span class="contact-value">+91 9943062541</span></a>
+            </div>
+          </div>
+
+          <div class="contact-card-box">
+            <div class="contact-icon-box"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn Profile</span>
+              <a href="https://www.linkedin.com/in/abitha-mern-developer" target="_blank" rel="noreferrer"><span class="contact-value">Abitha | MERN Stack Developer</span></a>
+            </div>
+          </div>
+
+          <div class="contact-card-box">
+            <div class="contact-icon-box"><i class="fa-solid fa-globe"></i></div>
+            <div>
+              <span class="contact-label">Live Portfolio</span>
+              <a href="https://portfolio-zeta-green-95.vercel.app/" target="_blank" rel="noreferrer"><span class="contact-value">portfolio-zeta-green-95.vercel.app</span></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Contact Form (Direct Delivery to abitha.mern@gmail.com via FormSubmit) -->
+        <div class="contact-form-panel">
+          <form id="contact-form" action="https://formsubmit.co/ajax/abitha.mern@gmail.com" method="POST" onsubmit="handleFormSubmit(event)">
+            
+            <!-- Anti-Spam & Configuration -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" style="display:none">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="e.g. John Doe">
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="john@example.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="_subject" class="form-control" placeholder="Project Inquiry / Job Opportunity">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" class="form-control" rows="5" required placeholder="Hi Abitha, I would love to connect with you regarding..."></textarea>
+            </div>
+
+            <div class="form-status" id="form-feedback"></div>
+
+            <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+              <i class="fa-regular fa-paper-plane"></i>
+              <span>Send Message to Abitha</span>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        
+        <div class="footer-brand">
+          <strong style="color: #ffffff;">Abitha</strong>
+          <span>• MERN Stack Developer • Made with ❤️ using HTML, CSS, and JavaScript.</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Back to top ↑</a>
+          <a href="https://portfolio-zeta-green-95.vercel.app/" target="_blank" rel="noreferrer">Live Demo</a>
+          <a href="https://www.linkedin.com/in/abitha-mern-developer" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:abitha.mern@gmail.com">Email</a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Resume Preview & Download Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title">
+          <i class="fa-regular fa-file-pdf" style="color: var(--primary-light);"></i>
+          <span>Abitha_MERN_Resume.pdf</span>
+        </div>
+        <button class="modal-close-btn" onclick="closeResumeModal()" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-header-box">
+          <h4>Abitha</h4>
+          <p style="color: var(--primary-light); font-weight: 600; font-family: var(--font-mono); margin-top: 2px;">MERN Stack Developer</p>
+          <p style="font-size: 0.8rem; margin-top: 6px;">Email: abitha.mern@gmail.com | Phone: +91 9943062541</p>
+        </div>
+
+        <div class="resume-section-title">// Summary</div>
+        <p>Passionate MERN Stack Developer who enjoys building modern, responsive, and user-friendly web applications using MongoDB, Express.js, React.js, and Node.js.</p>
+
+        <div class="resume-section-title">// Skills</div>
+        <p>• <strong>Frontend:</strong> HTML5, CSS3, JavaScript (ES6+), React.js, Redux, Context API, Responsive Design</p>
+        <p>• <strong>Backend:</strong> Node.js, Express.js, REST APIs, JWT Authentication</p>
+        <p>• <strong>Databases:</strong> MongoDB, MySQL</p>
+        <p>• <strong>Tools & Deployment:</strong> Git, GitHub, Vercel, Render, CI/CD</p>
+
+        <div class="resume-section-title">// Experience & Internship</div>
+        <p>• <strong>Web Development Intern (4 Months):</strong> Built responsive user interfaces, dynamic React components, integrated REST APIs, and managed Git version workflows.</p>
+
+        <div class="resume-section-title">// Key Projects</div>
+        <p>• <strong>Trendique Clothing Store:</strong> MERN e-commerce with authentication & product management.</p>
+        <p>• <strong>Instagram Clone:</strong> MERN social platform with posts, likes, and comments.</p>
+        <p>• <strong>Expense Tracker:</strong> Real-time expense tracker in React and Node.</p>
+        <p>• <strong>Movie Search & Booksky:</strong> Interactive applications with API integration & DOM manipulation.</p>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline btn-sm" onclick="closeResumeModal()">Close</button>
+        <button class="btn btn-primary btn-sm" onclick="window.print()">
+          <i class="fa-solid fa-print"></i>
+          <span>Print / Save PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
